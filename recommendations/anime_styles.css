@@ -1,0 +1,257 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #870000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #190A05, #870000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    padding: 5px;
+}
+
+.logo img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.banner {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav {
+    background: linear-gradient(45deg, #2a2a72, #090979);
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.nav-tabs {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-tabs li {
+    position: relative;
+}
+
+.nav-tabs a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+}
+
+.nav-tabs .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.nav-tabs .dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-tabs .dropdown-content a:hover {
+    background-color: #444;
+}
+
+.nav-tabs .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    height: calc(100vh - 160px);
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
+main {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.filter-section_genre {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-section_sort {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.genres {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    margin-right: 10px;
+    padding: 10px;
+    background: #2a2a72;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #090979;
+}
+
+.anime-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+
+}
+
+.anime-item {
+
+
+    border-radius: 8px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+.anime-item img {
+    width: 320px;
+    height: 480px;
+    border-radius: 8px;
+}
+
+.anime-item h3 {
+    margin: 10px 0 5px 0;
+}
+
+.anime-item .genres, .anime-item .rating, .anime-item .review {
+    margin: 5px 0;
+}
+
+a {
+    color: #5ee7df;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .anime-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .anime-item {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1920px) and (min-height: 1080px) {
+    main {
+        height: calc(100vh - 160px);
+    }
+}
+
+@media (min-width: 1080px) and (min-height: 1920px) {
+    main {
+        height: calc(100vh - 160px);
+    }
+}
+
+@media (min-width: 3440px) and (min-height: 1440px) {
+    main {
+        height: calc(100vh - 160px);
+    }
+}
+
+@media (min-width: 1440px) and (min-height: 3440px) {
+    main {
+        height: calc(100vh - 160px);
+    }
+}
+
+@media (min-width: 2560px) and (min-height: 1440px) {
+    main {
+        height: calc(100vh - 160px);
+    }
+}
+
+@media (min-width: 1440px) and (min-height: 2560px) {
+    main {
+        height: calc(100vh - 160px);
+    }
+}
+
+@media (min-width: 1280px) and (min-height: 720px) {
+    main {
+        height: calc(100vh - 160px);
+    }
+}
+
+@media (min-width: 720px) and (min-height: 1280px) {
+    main {
+        height: calc(100vh - 160px);
+    }
+}

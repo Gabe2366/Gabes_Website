@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Recommendations</title>
+    <link rel="stylesheet" href="anime_styles.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="../images/gabuh.png" alt="Logo">
+    </div>
+    <div class="banner">
+        <h1>Anime Recommendations</h1>
+    </div>
+</header>
+<nav>
+    <ul class="nav-tabs">
+        <li><a href="../website.html">Home</a></li>
+        <li><a href="../projects/projects.html">My Projects</a></li>
+        <li class="dropdown">
+            <a href="#">Recommendations</a>
+            <ul class="dropdown-content">
+                <li><a href="anime.html">Anime</a></li>
+                <li><a href="manga.html">Manga</a></li>
+                <li><a href="light_novel.html">Light Novels</a></li>
+            </ul>
+        <li><a href="../gabes_corner/gabes_corner.html">Gabe's Corner</a></li>
+        </li>
+    </ul>
+</nav>
+<main>
+    <section class="filter-section_genre">
+        <h2>Filter by Genre</h2>
+        <div class="genres">
+            <label><input type="checkbox" value="Romance"> Romance</label>
+            <label><input type="checkbox" value="Historical"> Historical</label>
+            <label><input type="checkbox" value="Drama"> Drama</label>
+            <label><input type="checkbox" value="Psychological"> Psychological</label>
+            <label><input type="checkbox" value="Action"> Action</label>
+            <label><input type="checkbox" value="Slice of Life"> Slice of Life</label>
+            <label><input type="checkbox" value="Ecchi"> Ecchi</label>
+            <label><input type="checkbox" value="Harem"> Harem</label>
+            <label><input type="checkbox" value="Sci-Fi"> Sci-Fi</label>
+            <label><input type="checkbox" value="Fantasy"> Fantasy</label>
+            <label><input type="checkbox" value="Isekai"> Isekai</label>
+            <label><input type="checkbox" value="Mystery"> Mystery</label>
+            <label><input type="checkbox" value="Shounen"> Shounen</label>
+            <label><input type="checkbox" value="Comedy"> Comedy</label>
+            <label><input type="checkbox" value="Adventure"> Adventure</label>
+            <label><input type="checkbox" value="Supernatural"> Supernatural</label>
+            <label><input type="checkbox" value="Thriller"> Thriller</label>
+            <label><input type="checkbox" value="Mecha"> Mecha</label>
+            <label><input type="checkbox" value="Sports"> Sports</label>
+
+        <button id="deselect-all">Deselect All</button>
+        </div>
+    </section>
+    <section class="filter-section_sort">
+        <h2>Sort by</h2>
+        <button id="sort-highest">Highest Rating</button>
+        <button id="sort-lowest">Lowest Rating</button>
+        <button id="sort-az">A-Z</button>
+        <button id="sort-za">Z-A</button>
+    </section>
+    <section class="anime-list">
+        <!-- Anime items will be dynamically inserted here -->
+    </section>
+</main>
+<script src="anime.js"></script>
+</body>
+</html>
